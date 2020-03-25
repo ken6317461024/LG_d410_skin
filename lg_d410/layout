@@ -1,0 +1,62 @@
+parts {
+  device {
+    display {
+      width   540
+      height  960
+      x       0
+      y       0
+    }
+  }
+  portrait {
+    background {
+      image   LG_d410.png
+    }
+	buttons {
+      back {
+        image key_back.png
+        x 74
+        y 1107
+      }
+      soft-left {
+        image key_options.png
+        x 320
+        y 1107
+      }
+	  search {
+	    image key_extra.png
+		x 451
+		y 1107
+      }
+      home {
+        image key_home.png
+        x 183
+        y 1107
+      }
+	}
+  }
+}
+
+layouts {
+    portrait {
+        width	637
+        height	1219
+        event	EV_SW:0:1
+		
+        part1 {
+            name    portrait
+            x       0
+            y       0
+        }
+
+        part2 {
+            name    device
+            x       48
+            y       122
+        }
+    }
+}
+
+network {
+    speed  full
+    delay  none
+}
