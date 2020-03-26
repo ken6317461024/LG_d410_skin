@@ -37,26 +37,26 @@ parts {
 }
 
 layouts {
-    portrait {
-        width	637
-        height	1219
-        event	EV_SW:0:1
+  portrait {
+    width	637
+    height	1219
+    event	EV_SW:0:1
 		
-        part1 {
-            name    portrait
-            x       0
-            y       0
-        }
-
-        part2 {
-            name    device
-            x       48
-            y       122
-        }
+    part1 {
+      name    portrait
+      x       0
+      y       0
     }
+
+    part2 {
+      name    device
+      x       48
+      y       122
+    }
+  }
 }
 
 network {
-    speed  full
-    delay  none
+  speed  full
+  delay  none
 }
